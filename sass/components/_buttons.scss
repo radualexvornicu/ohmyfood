@@ -1,0 +1,25 @@
+.btn{
+    padding: 10px 50px;
+    text-decoration: none;
+   
+    
+}
+.btn-main{
+    background-color: $color-primary;
+    color: $color-txt;
+    width: $width-main;
+    
+}
+.wiggle a:hover{ 
+    animation: wiggle 75ms infinite;
+    animation-timing-function: linear;   
+  }
+  @keyframes wiggle {
+    0% { transform: translate(2px, 0); }
+    50% { transform: translate(-2px, 0); }
+    100% { transform: translate(2px, 0); }
+  }
+  
+.btn-amenu{
+    background-color: $color-amenu-back;
+}

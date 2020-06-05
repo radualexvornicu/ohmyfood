@@ -1,0 +1,19 @@
+{
+  "name": "npm",
+  "version": "1.0.0",
+  "description": "oh my food",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radualexvornicu/ohmyfood.git"
+  },
+  "author": "Vornicu Radu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/radualexvornicu/ohmyfood.git/issues"
+  },
+  "homepage": "https://github.com/radualexvornicu/"
+}

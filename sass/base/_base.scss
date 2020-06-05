@@ -1,0 +1,34 @@
+
+header{
+    position: sticky;
+    width: $width-main;
+}
+main{
+    width: $width-main;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.amenu-small{
+    background-color: $color-amenu-back;
+    width: $width-menu-small;
+    margin: 25px;
+    text-align: center;
+}
+.bmenu-small{
+    background-color: $color-bmenu-back;
+    width: $width-menu-small;
+}
+.cmenu-small{
+    background-color: $color-cmenu-back-a;
+    width: $width-menu-small;
+}
+.dmenu-small{
+    background-color: $color-dmenu-back;
+    width: $width-menu-small;
+}
