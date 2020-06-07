@@ -2,6 +2,7 @@
 header{
     position: sticky;
     width: $width-main;
+    text-align: center;
 }
 main{
     width: $width-main;
@@ -13,6 +14,18 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+footer{
+    width: $width-main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+footer div{
+    display: flex;
+    justify-content: space-evenly;
+    width: $width-main;
 }
 .amenu-small{
     background-color: $color-amenu-back;

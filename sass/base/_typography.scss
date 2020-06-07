@@ -7,6 +7,10 @@ font-family: 'Kaushan Script', cursive;
 font-family: 'Montserrat', sans-serif;
 */
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;600;700&family=Alex+Brush&family=Caveat:wght@700&family=Croissant+One&family=Devonshire&family=Handlee&family=Kaushan+Script&family=Montserrat:wght@500;700&display=swap');
+
+p{
+    margin: 0px;
+}
 body {
 
 }
@@ -67,4 +71,7 @@ body {
     font-family: $primary-font-dmenu;
     font-size: $fnormal;
     color: $color-dmenu-gdr-a;
+}
+.main__h3{
+       
 }
