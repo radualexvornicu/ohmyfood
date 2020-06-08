@@ -24,44 +24,56 @@ body {
 }
 .amenu__h4{
     font-family: $primary-font-amenu;
-    font-size: $fsmall;
+    font-size: $fnormal;
+    font-weight: $wregular;
     color: $color-amenu-txt;
 
 }
 .amenu__h3{
     font-family: $secondary-font-amenu;
-    font-size: $fnormal;
+    font-size: $fmedium;
+    font-weight: $wsemi-bold;
+    font-style: italic;
     color: $color-amenu-txt;
+    margin: $margin-small;
 
 }
 .bmenu__h4{
     font-family: $secondary-font-bmenu;
     font-size: $fsmall;
+    font-weight: $wregular;
     background-image: linear-gradient(to right, $color-bmenu-gdr-a, $color-bmenu-gdr-b, $color-bmenu-gdr-c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .bmenu__h3{
     font-family: $primary-font-bmenu;
-    font-size: $fnormal;
+    font-size: $fmedium;
+    font-weight: $wsemi-bold;
+    margin: $margin-small;
     color: $color-bmenu-gdr-a;
 }
 .cmenu__h4{
     font-family: $secondary-font-cmenu;
-    font-size: $fsmall;
+    font-size: $fnormal;
+    font-weight: $wregular;
     background-image: linear-gradient(to right, $color-cmenu-gdr-a, $color-cmenu-gdr-b, $color-cmenu-gdr-c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .cmenu__h3{
     font-family: $primary-font-cmenu;
-    font-size: $fnormal;
+    font-size: $fmedium;
+    font-weight: $wsemi-bold;
+    font-style: italic;
+    margin: $margin-small;
     color: $color-cmenu-gdr-b;
 
 }
 .dmenu__h4{
     font-family: $secondary-font-dmenu;
-    font-size: $fsmall;
+    font-size: $fnormal;
+    font-weight: $wsemi-bold;
     background-image: linear-gradient(to right, $color-dmenu-gdr-a, $color-dmenu-gdr-b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -69,9 +81,15 @@ body {
 }
 .dmenu__h3{
     font-family: $primary-font-dmenu;
-    font-size: $fnormal;
+    font-size: $fmedium;
+    font-weight: $wsemi-bold;
+    margin: $margin-small;
     color: $color-dmenu-gdr-a;
+
 }
 .main__h3{
+
+}
+.main__h4{
        
 }

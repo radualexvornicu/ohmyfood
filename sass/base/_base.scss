@@ -13,35 +13,66 @@ main{
 body{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 footer{
     width: $width-main;
+    height: 50px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    text-align: center;
-}
-footer div{
-    display: flex;
     justify-content: space-evenly;
+    background-color: $color-primary;
+
+}
+body div{
+    display: flex;
+    justify-content: center;
     width: $width-main;
+    text-align: center;
+    margin: $margin-small;
 }
 .amenu-small{
     background-color: $color-amenu-back;
     width: $width-menu-small;
-    margin: 25px;
+    height: $height-menu-small;
+    margin: $margin-normal $margin-small $margin-small  $margin-normal;
     text-align: center;
+    box-shadow: 0 0 5px $color-amenu-gdr-a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .bmenu-small{
     background-color: $color-bmenu-back;
     width: $width-menu-small;
+    height: $height-menu-small;
+    margin: $margin-normal $margin-normal $margin-small $margin-small;
+    text-align: center;
+    box-shadow: 0 0 5px $color-bmenu-gdr-a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .cmenu-small{
     background-color: $color-cmenu-back-a;
     width: $width-menu-small;
+    height: $height-menu-small;
+    margin:  $margin-small $margin-small $margin-small $margin-normal;
+    text-align: center;
+    box-shadow: 0 0 5px $color-cmenu-gdr-a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .dmenu-small{
     background-color: $color-dmenu-back;
     width: $width-menu-small;
+    height: $height-menu-small;
+    margin: $margin-small $margin-normal $margin-normal  $margin-small;
+    text-align: center;
+    box-shadow: 0 0 5px $color-dmenu-gdr-a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
