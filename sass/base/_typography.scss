@@ -71,6 +71,109 @@ body {
     margin: $margin-small;
 
 }
+.bmenu-big__h1{
+    font-family: $secondary-font-bmenu;
+    font-size: $fbig;
+    font-weight: $wregular;
+    background-image: linear-gradient(to right, $color-bmenu-gdr-a, $color-bmenu-gdr-b, $color-bmenu-gdr-c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.bmenu-big__h3__a{
+    font-family: $secondary-font-bmenu;
+    font-size: $fsmall;
+    font-weight: $wsemi-bold;
+    color: $color-bmenu-gdr-a;
+    margin: $margin-small;
+}
+.bmenu-big__h3__b{
+    font-family: $secondary-font-bmenu;
+    font-size: $fsmall;
+    font-weight: $wsemi-bold;
+    color: $color-bmenu-gdr-b;
+    margin: $margin-small;
+}
+.bmenu-big__h3__c{
+    font-family: $secondary-font-bmenu;
+    font-size: $fsmall;
+    font-weight: $wsemi-bold;
+    color: $color-bmenu-gdr-c;
+    margin: $margin-small;
+}
+.bmenu-big__h4__a{
+    font-family: $primary-font-bmenu;
+    font-size: $fsmall;
+    font-weight: $wregular;
+    color: $color-bmenu-gdr-a;
+}
+.bmenu-big__h4__b{
+    font-family: $primary-font-bmenu;
+    font-size: $fsmall;
+    font-weight: $wregular;
+    color: $color-bmenu-gdr-b;
+}
+.bmenu-big__h4__c{
+    font-family: $primary-font-bmenu;
+    font-size: $fsmall;
+    font-weight: $wregular;
+    color: $color-bmenu-gdr-c;
+}
+.cmenu-big__h1{
+    font-family: $secondary-font-cmenu;
+    font-size: $fbig;
+    font-weight: $wregular;
+    background-image: linear-gradient(to right, $color-cmenu-gdr-a, $color-cmenu-gdr-b, $color-cmenu-gdr-c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.cmenu-big__h2{
+    font-family: $primary-font-cmenu;
+    font-size: $fbig;
+    font-weight: $wsemi-bold;
+    color: $color-cmenu-txt;
+    margin: $margin-small;  
+}
+.cmenu-big__h3{
+    font-family: $primary-font-cmenu;
+    font-size: $fsmall;
+    font-weight: $wsemi-bold;
+    color: $color-cmenu-txt;
+    margin: $margin-small;
+}
+.cmenu-big__h4{
+    font-family: $primary-font-cmenu;
+    font-size: $fsmall;
+    font-weight: $wregular;
+    color: $color-cmenu-txt;
+}
+.dmenu-big__h1{
+    font-family: $primary-font-dmenu;
+    font-size: $fbig;
+    font-weight: $wregular;
+    background-image: linear-gradient(to right, $color-dmenu-gdr-a, $color-dmenu-gdr-b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.dmenu-big__h2{
+    font-family: $secondary-font-dmenu;
+    font-size: $fbig;
+    font-weight: $wsemi-bold;
+    color: $color-dmenu-txt;
+    margin: $margin-small;  
+}
+.dmenu-big__h3{
+    font-family: $secondary-font-dmenu;
+    font-size: $fsmall;
+    font-weight: $wsemi-bold;
+    color: $color-dmenu-txt;
+    margin: $margin-small;
+}
+.dmenu-big__h4{
+    font-family: $secondary-font-dmenu;
+    font-size: $fsmall;
+    font-weight: $wregular;
+    color: $color-dmenu-txt;
+}
 .bmenu__h4{
     font-family: $secondary-font-bmenu;
     font-size: $fsmall;
