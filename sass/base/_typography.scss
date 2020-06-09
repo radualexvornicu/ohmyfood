@@ -22,6 +22,39 @@ body {
     margin: 0px;
     padding: 0px;
 }
+.amenu-big__h5{
+    font-family: $primary-font-amenu;
+    font-size: $fsmall;
+    font-weight: $wlight;
+    color: $color-amenu-txt;
+}
+.amenu-big__h1{
+    font-family: $primary-font-amenu;
+    font-size: $flarge;
+    font-weight: $wsemi-bold;
+    color: $color-amenu-txt;
+    margin: $margin-small;
+}
+.amenu-big__h2{
+    font-family: $primary-font-amenu;
+    font-size: $fbig;
+    font-weight: $wsemi-bold;
+    color: $color-amenu-txt;
+    margin: $margin-small;  
+}
+.amenu-big__h3{
+    font-family: $secondary-font-amenu;
+    font-size: $fmedium;
+    font-weight: $wsemi-bold;
+    color: $color-amenu-txt;
+    margin: $margin-small;
+}
+.amenu-big__h4{
+    font-family: $secondary-font-amenu;
+    font-size: $fnormal;
+    font-weight: $wregular;
+    color: $color-amenu-txt;
+}
 .amenu__h4{
     font-family: $primary-font-amenu;
     font-size: $fnormal;
