@@ -42,8 +42,8 @@ $wsemi-bold: 600;
 $wbold: 700;
 
 /*Variables for font size*/
-$fsmall: 16px;
-$fnormal: 24px;
+$fsmall: 12px;
+$fnormal: 18px;
 $fmedium:30px;
 $fbig:36px;
 $flarge:42px;
@@ -57,4 +57,8 @@ $height-menu-small: 300px;
 $margin-small: 15px;
 $margin-normal: 25px;
 $margin-medium: 40px;
-$margin-large: 60px
+$margin-large: 60px;
+
+/*Variables for animation*/
+$animate-underline: all 0.2s ease-in-out;
+$animate-zoom: 0.75s cubic-bezier(0.6, -1.60, 0.8, 2.335)
