@@ -1,94 +1,164 @@
 
 header{
-    position: sticky;
-    width: $width-main;
+    background-color: $color-primary;
+    width: 100%;
     text-align: center;
+    top: 0px
 }
 main{
-    width: $width-main;
+    width: 80%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
+    justify-self: center;
+    margin-bottom: $margin-normal*4;
     
 }
+
+img{
+    width: 30%;
+}
 .menu-big{
-    width: $width-main;
+    width: $width-large;
+    height: min-content;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
+    flex-grow: 1;
     text-align: center;
-    padding: $margin-normal;
+    padding: $margin-normal*3;
+}
+.menu-big__a{
+    background-color: $color-amenu-back;
+    box-shadow: 0 0 5px $color-amenu-gdr-a;
+}
+.menu-big__b{
+    background-color: $color-bmenu-back;
+    box-shadow: 0 0 5px $color-bmenu-gdr-a;
+
+}
+.menu-big__c{
+    background-color: $color-cmenu-back-a;
+    box-shadow: 0 0 5px $color-cmenu-gdr-a;
+
+}
+.menu-big__d{
+    background-color: $color-dmenu-back;
+    box-shadow: 0 0 5px $color-dmenu-gdr-b;
+
 }
 body{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    text-align: center;
+    margin: auto;
 }
 footer{
-    width: $width-main;
+    width: 100%;
     height: 50px;
+    position: fixed;
+    bottom: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: $color-primary;
 
 }
+.content-row{
+    flex-direction: row;
+    display: flex;
+    min-width: fit-content;
+}
 .bot-content{
+    display: flex;
+    flex-wrap: wrap;
     background-color: $color-primary;
-    width: max-content;
+    width: $width-normal;
     text-align: center;
-    margin: $margin-small;
-    border-radius: 10px;
+    padding: $margin-small;
+    border-radius: 20px;
 }
-.amenu-small{
+.bot-content:after {
+    color: $color-txt;
+    font-size: $fbig;
+    display: inline-block;
+    -webkit-animation: dotty steps(1, end) 2s infinite;
+    animation: dotty steps(1, end) 2s infinite;
+    content: '';
+}
+@-webkit-keyframes dotty {
+    0% {
+        content: '';
+    }
+    25% {
+        content: '.';
+    }
+    50% {
+        content: '..';
+    }
+    75% {
+        content: '...';
+    }
+    100% {
+        content: '';
+    }
+}
+
+@keyframes dotty {
+    0% {
+        content: '';
+    }
+    25% {
+        content: '.';
+    }
+    50% {
+        content: '..';
+    }
+    75% {
+        content: '...';
+    }
+    100% {
+        content: '';
+    }
+}
+.menu-small{    
+    width: $width-normal;
+    height: $height-big;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.menu-small__a{
     background-color: $color-amenu-back;
-    width: $width-menu-small;
-    height: $height-menu-small;
-    margin: $margin-normal $margin-small $margin-small  $margin-normal;
-    text-align: center;
     box-shadow: 0 0 5px $color-amenu-gdr-a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: $margin-normal $margin-small $margin-small  $margin-normal;
 }
-.bmenu-small{
+.menu-small__b{
     background-color: $color-bmenu-back;
-    width: $width-menu-small;
-    height: $height-menu-small;
     margin: $margin-normal $margin-normal $margin-small $margin-small;
-    text-align: center;
     box-shadow: 0 0 5px $color-bmenu-gdr-a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
 }
-.cmenu-small{
+.menu-small__c{
     background-color: $color-cmenu-back-a;
-    width: $width-menu-small;
-    height: $height-menu-small;
     margin:  $margin-small $margin-small $margin-small $margin-normal;
-    text-align: center;
     box-shadow: 0 0 5px $color-cmenu-gdr-a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
-.dmenu-small{
+.menu-small__d{
     background-color: $color-dmenu-back;
-    width: $width-menu-small;
-    height: $height-menu-small;
     margin: $margin-small $margin-normal $margin-normal  $margin-small;
-    text-align: center;
     box-shadow: 0 0 5px $color-dmenu-gdr-a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    }
 
 .menu-txt{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: $margin-small;
 }

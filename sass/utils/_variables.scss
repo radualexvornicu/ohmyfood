@@ -42,17 +42,22 @@ $wsemi-bold: 600;
 $wbold: 700;
 
 /*Variables for font size*/
-$fsmall: 12px;
-$fnormal: 18px;
-$fmedium:30px;
-$fbig:36px;
-$flarge:42px;
+$fsmall: 18px;
+$fnormal: 24px;
+$fmedium:32px;
+$fbig:46px;
+$flarge:65px;
 /*Variables for width*/
-$width-main: 520px;
-$width-menu-small: 220px;
-$width-menu-big: 350px;
+$width-large: 720px;
+$width-big: 520px;
+$width-medium: 460px;
+$width-normal: 350px;
+$width-small: 260px;
 /*Variables for height*/
-$height-menu-small: 300px;
+$height-big: 420px;
+$height-medium: 350px;
+$height-normal: 260px;
+$height-small: 150px;
 /*Variables for margin*/
 $margin-small: 15px;
 $margin-normal: 25px;

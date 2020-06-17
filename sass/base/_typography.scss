@@ -14,29 +14,55 @@ p{
 body {
 
 }
+h1{
+    font-family: $primary-font;
+    font-style: bold;
+}
 .note{
     text-decoration: none;
     font-style: italic;
     transform: rotate(-10deg);
-    font-size: 30px;
+    font-size: $flarge;
+    width: $flarge+1;
+    margin: auto;
     background-image: linear-gradient(to right, $color-amenu-gdr-a, $color-amenu-gdr-b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.main-big__h2{
-    font-size: $fmedium;
+.main-big--h1{
+    font-size: $flarge;
     font-family: $primary-font;
-    font-weight: $wsemi-bold;
+    font-weight: $wbold;
     background-color: $color-primary;
     margin: 0px;
     padding: 0px;
 }
-.amenu-big__h5{
-    font-family: $primary-font-amenu;
+.menu-big--h5{    
     font-size: $fsmall;
     font-weight: $wlight;
+}
+.menu-big--h5__amenu{
+    font-family: $primary-font-amenu;
     color: $color-amenu-txt;
 }
+.menu-big--h5__bmenu{
+    font-family: $primary-font-bmenu;
+    
+}
+.menu-big--h5__bmenu__a{
+    color: $color-bmenu-gdr-a;
+}
+.menu-big--h5__bmenu__b{
+    color: $color-bmenu-gdr-b;
+}
+.menu-big--h5__bmenu__c{
+    color: $color-bmenu-gdr-c;
+}
+.menu-big--h5__cmenu{
+    font-family: $primary-font-amenu;
+    color: $color-cmenu-txt;
+}
+
 .amenu-big__h1{
     font-family: $primary-font-amenu;
     font-size: $flarge;
@@ -53,27 +79,27 @@ body {
 }
 .amenu-big__h3{
     font-family: $secondary-font-amenu;
-    font-size: $fnormal;
+    font-size: $fmedium;
     font-weight: $wsemi-bold;
     color: $color-amenu-txt;
     margin: $margin-small;
 }
 .amenu-big__h4{
     font-family: $secondary-font-amenu;
-    font-size: $fsmall;
+    font-size: $fnormal;
     font-weight: $wregular;
     color: $color-amenu-txt;
 }
 .amenu__h4{
     font-family: $primary-font-amenu;
-    font-size: $fnormal;
+    font-size: $fmedium;
     font-weight: $wregular;
     color: $color-amenu-txt;
 
 }
 .amenu__h3{
     font-family: $secondary-font-amenu;
-    font-size: $fsmall;
+    font-size: $fbig;
     font-weight: $wsemi-bold;
     font-style: italic;
     color: $color-amenu-txt;
@@ -82,7 +108,7 @@ body {
 }
 .bmenu-big__h1{
     font-family: $secondary-font-bmenu;
-    font-size: $fbig;
+    font-size: $fbig*0.7;
     font-weight: $wregular;
     background-image: linear-gradient(to right, $color-bmenu-gdr-a, $color-bmenu-gdr-b, $color-bmenu-gdr-c);
     -webkit-background-clip: text;
@@ -90,21 +116,21 @@ body {
 }
 .bmenu-big__h3__a{
     font-family: $secondary-font-bmenu;
-    font-size: $fsmall;
+    font-size: $fnormal*0.74;
     font-weight: $wsemi-bold;
     color: $color-bmenu-gdr-a;
     margin: $margin-small;
 }
 .bmenu-big__h3__b{
     font-family: $secondary-font-bmenu;
-    font-size: $fsmall;
+    font-size: $fnormal*0.74;
     font-weight: $wsemi-bold;
     color: $color-bmenu-gdr-b;
     margin: $margin-small;
 }
 .bmenu-big__h3__c{
     font-family: $secondary-font-bmenu;
-    font-size: $fsmall;
+    font-size: $fnormal*0.74;
     font-weight: $wsemi-bold;
     color: $color-bmenu-gdr-c;
     margin: $margin-small;
@@ -185,7 +211,7 @@ body {
 }
 .bmenu__h4{
     font-family: $secondary-font-bmenu;
-    font-size: $fsmall;
+    font-size: $fnormal;
     font-weight: $wregular;
     background-image: linear-gradient(to right, $color-bmenu-gdr-a, $color-bmenu-gdr-b, $color-bmenu-gdr-c);
     -webkit-background-clip: text;
@@ -193,14 +219,14 @@ body {
 }
 .bmenu__h3{
     font-family: $primary-font-bmenu;
-    font-size: $fmedium;
+    font-size: $flarge;
     font-weight: $wsemi-bold;
     margin: $margin-small;
     color: $color-bmenu-gdr-a;
 }
 .cmenu__h4{
     font-family: $secondary-font-cmenu;
-    font-size: $fnormal;
+    font-size: $fmedium;
     font-weight: $wregular;
     background-image: linear-gradient(to right, $color-cmenu-gdr-a, $color-cmenu-gdr-b, $color-cmenu-gdr-c);
     -webkit-background-clip: text;
@@ -208,7 +234,7 @@ body {
 }
 .cmenu__h3{
     font-family: $primary-font-cmenu;
-    font-size: $fmedium;
+    font-size: $fbig;
     font-weight: $wsemi-bold;
     font-style: italic;
     margin: $margin-small;
@@ -217,7 +243,7 @@ body {
 }
 .dmenu__h4{
     font-family: $secondary-font-dmenu;
-    font-size: $fnormal;
+    font-size: $fmedium;
     font-weight: $wsemi-bold;
     background-image: linear-gradient(to right, $color-dmenu-gdr-a, $color-dmenu-gdr-b);
     -webkit-background-clip: text;
@@ -226,15 +252,17 @@ body {
 }
 .dmenu__h3{
     font-family: $primary-font-dmenu;
-    font-size: $fmedium;
+    font-size: $fbig;
     font-weight: $wsemi-bold;
     margin: $margin-small;
     color: $color-dmenu-gdr-a;
 
 }
 .main__h3{
-
+    font-family: $primary-font;
+    font-size: $fmedium;
 }
 .main__h4{
-       
+    font-family: $primary-font;
+    font-size: $fnormal;
 }

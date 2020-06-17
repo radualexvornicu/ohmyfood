@@ -8,7 +8,7 @@
 .btn-main{
     background-color: $color-primary;
     color: $color-txt;
-    width: $width-menu-small;
+    width: $width-small;
     
 }
 .btn-main__radius{
@@ -17,9 +17,11 @@
 }
 .btn__left{
     text-align: left;
+    margin-left: 100px;
 }
 .btn__right{
     text-align: right;
+    margin-right: 100px;
 }
 .wiggle :hover{ 
     animation: wiggle 500ms infinite;
@@ -45,5 +47,6 @@
     overflow: hidden;
 }
 .btn-zoom:hover a{
-    transform: scale(1.5);
+    transform: scale(1.25);
+    opacity: 0.8;
 }
