@@ -11,9 +11,6 @@ font-family: 'Montserrat', sans-serif;
 p{
     margin: 0px;
 }
-body {
-
-}
 h1{
     font-family: $primary-font;
     font-style: bold;
@@ -26,8 +23,21 @@ h1{
     width: $flarge+1;
     margin: auto;
     background-image: linear-gradient(to right, $color-amenu-gdr-a, $color-amenu-gdr-b);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    @media screen and (max-width: $break-large) {
+    font-size: $flarge*0.9;
+    width: $flarge*0.9+1;
+    }
+    @media screen and (max-width: $break-medium) {
+    font-size: $flarge*0.75;
+    width: $flarge*0.75+1;
+    }
+    @media screen and (max-width: $break-small) {
+    font-size: $flarge*0.5;
+    width: $flarge*0.5+1;
+    }
 }
 .main-big--h1{
     font-size: $flarge;
@@ -36,31 +46,28 @@ h1{
     background-color: $color-primary;
     margin: 0px;
     padding: 0px;
+    @media screen and (max-width: $break-large) {
+        font-size: $flarge*0.9;
+    }
+    @media screen and (max-width: $break-medium) {
+        font-size: $flarge*0.75;
+    }
+    @media screen and (max-width: $break-small) {
+        font-size: $flarge*0.5;
+    }
 }
 .menu-big--h5{    
     font-size: $fsmall;
     font-weight: $wlight;
-}
-.menu-big--h5__amenu{
-    font-family: $primary-font-amenu;
-    color: $color-amenu-txt;
-}
-.menu-big--h5__bmenu{
-    font-family: $primary-font-bmenu;
-    
-}
-.menu-big--h5__bmenu__a{
-    color: $color-bmenu-gdr-a;
-}
-.menu-big--h5__bmenu__b{
-    color: $color-bmenu-gdr-b;
-}
-.menu-big--h5__bmenu__c{
-    color: $color-bmenu-gdr-c;
-}
-.menu-big--h5__cmenu{
-    font-family: $primary-font-amenu;
-    color: $color-cmenu-txt;
+    @media screen and (max-width: $break-large) {
+        font-size: $fsmall*0.9;
+    }
+    @media screen and (max-width: $break-medium) {
+        font-size: $fsmall*0.75;
+    }
+    @media screen and (max-width: $break-small) {
+        font-size: $flarge*0.5;
+    }
 }
 
 .amenu-big__h1{
@@ -69,6 +76,17 @@ h1{
     font-weight: $wmedium;
     color: $color-amenu-txt;
     margin: $margin-small;
+    @media screen and (max-width: $break-large) {
+        font-size: $flarge*0.9;
+    }
+    @media screen and (max-width: $break-medium) {
+        font-size: $flarge*0.75;
+        margin: $margin-small*0.8;
+    }
+    @media screen and (max-width: $break-small) {
+        font-size: $flarge*0.5;
+        margin: $margin-small*0.6;
+    }
 }
 .amenu-big__h2{
     font-family: $primary-font-amenu;
@@ -76,6 +94,17 @@ h1{
     font-weight: $wmedium;
     color: $color-amenu-txt;
     margin: $margin-small;  
+    @media screen and (max-width: $break-large) {
+        font-size: $fbig*0.9;
+    }
+    @media screen and (max-width: $break-medium) {
+        font-size: $fbig*0.75;
+        margin: $margin-small*0.8;
+    }
+    @media screen and (max-width: $break-small) {
+        font-size: $flarge*0.5;
+        margin: $margin-small*0.6;
+    }
 }
 .amenu-big__h3{
     font-family: $secondary-font-amenu;
@@ -83,18 +112,47 @@ h1{
     font-weight: $wsemi-bold;
     color: $color-amenu-txt;
     margin: $margin-small;
+    @media screen and (max-width: $break-large) {
+        font-size: $fmedium*0.9;
+    }
+    @media screen and (max-width: $break-medium) {
+        font-size: $fmedium*0.75;
+        margin: $margin-small*0.8;
+    }
+    @media screen and (max-width: $break-small) {
+        font-size: $fmedium*0.5;
+        margin: $margin-small*0.6;
+    }
 }
 .amenu-big__h4{
     font-family: $secondary-font-amenu;
     font-size: $fnormal;
     font-weight: $wregular;
     color: $color-amenu-txt;
+    @media screen and (max-width: $break-large) {
+        font-size: $fnormal*0.9;
+    }
+    @media screen and (max-width: $break-medium) {
+        font-size: $fnormal*0.75;
+    }
+    @media screen and (max-width: $break-small) {
+        font-size: $fnormal*0.5;
+    }
 }
 .amenu__h4{
     font-family: $primary-font-amenu;
     font-size: $fmedium;
     font-weight: $wregular;
     color: $color-amenu-txt;
+    @media screen and (max-width: $break-large) {
+        font-size: $fmedium*0.9;
+    }
+    @media screen and (max-width: $break-medium) {
+        font-size: $fmedium*0.75;
+    }
+    @media screen and (max-width: $break-small) {
+        font-size: $fmedium*0.5;
+    }
 
 }
 .amenu__h3{
@@ -105,12 +163,15 @@ h1{
     color: $color-amenu-txt;
     margin: $margin-small;
 
+
 }
 .bmenu-big__h1{
     font-family: $secondary-font-bmenu;
     font-size: $fbig*0.7;
     font-weight: $wregular;
     background-image: linear-gradient(to right, $color-bmenu-gdr-a, $color-bmenu-gdr-b, $color-bmenu-gdr-c);
+    background-clip: text;
+
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -158,8 +219,19 @@ h1{
     font-size: $fbig;
     font-weight: $wregular;
     background-image: linear-gradient(to right, $color-cmenu-gdr-a, $color-cmenu-gdr-b, $color-cmenu-gdr-c);
+    background-clip: text;
+
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    @media screen and (max-width: $break-large) {
+        font-size: $fbig*0.9;
+    }
+    @media screen and (max-width: $break-medium) {
+        font-size: $fbig*0.75;
+    }
+    @media screen and (max-width: $break-small) {
+        font-size: $flarge*0.5;
+    }
 }
 .cmenu-big__h2{
     font-family: $primary-font-cmenu;
@@ -167,6 +239,17 @@ h1{
     font-weight: $wsemi-bold;
     color: $color-cmenu-txt;
     margin: $margin-small;  
+    @media screen and (max-width: $break-large) {
+        font-size: $fbig*0.9;
+    }
+    @media screen and (max-width: $break-medium) {
+        font-size: $fbig*0.75;
+        margin: $margin-small*0.8;
+    }
+    @media screen and (max-width: $break-small) {
+        font-size: $fbig*0.5;
+        margin: $margin-small*0.6;
+    }
 }
 .cmenu-big__h3{
     font-family: $primary-font-cmenu;
@@ -174,20 +257,51 @@ h1{
     font-weight: $wsemi-bold;
     color: $color-cmenu-txt;
     margin: $margin-small;
+    @media screen and (max-width: $break-large) {
+        font-size: $fsmall*0.9;
+    }
+    @media screen and (max-width: $break-medium) {
+        font-size: $fsmall*0.75;
+        margin: $margin-small*0.8;
+    }
+    @media screen and (max-width: $break-small) {
+        font-size: $fsmall*0.5;
+        margin: $margin-small*0.6;
+    }
 }
 .cmenu-big__h4{
     font-family: $primary-font-cmenu;
     font-size: $fsmall;
     font-weight: $wregular;
     color: $color-cmenu-txt;
+    @media screen and (max-width: $break-large) {
+        font-size: $fsmall*0.9;
+    }
+    @media screen and (max-width: $break-medium) {
+        font-size: $fsmall*0.75;
+    }
+    @media screen and (max-width: $break-small) {
+        font-size: $fsmall*0.5;
+    }
 }
 .dmenu-big__h1{
     font-family: $primary-font-dmenu;
     font-size: $fbig;
     font-weight: $wregular;
     background-image: linear-gradient(to right, $color-dmenu-gdr-a, $color-dmenu-gdr-b);
+    background-clip: text;
+
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    @media screen and (max-width: $break-large) {
+        font-size: $fbig*0.9;
+    }
+    @media screen and (max-width: $break-medium) {
+        font-size: $fbig*0.75;
+    }
+    @media screen and (max-width: $break-small) {
+        font-size: $flarge*0.5;
+    }
 }
 .dmenu-big__h2{
     font-family: $secondary-font-dmenu;
@@ -195,6 +309,17 @@ h1{
     font-weight: $wsemi-bold;
     color: $color-dmenu-txt;
     margin: $margin-small;  
+    @media screen and (max-width: $break-large) {
+        font-size: $fbig*0.9;
+    }
+    @media screen and (max-width: $break-medium) {
+        font-size: $fbig*0.75;
+        margin: $margin-small*0.8;
+    }
+    @media screen and (max-width: $break-small) {
+        font-size: $flarge*0.5;
+        margin: $margin-small*0.6;
+    }
 }
 .dmenu-big__h3{
     font-family: $secondary-font-dmenu;
@@ -202,20 +327,52 @@ h1{
     font-weight: $wsemi-bold;
     color: $color-dmenu-txt;
     margin: $margin-small;
+    @media screen and (max-width: $break-large) {
+        font-size: $fsmall*0.9;
+    }
+    @media screen and (max-width: $break-medium) {
+        font-size: $fsmall*0.75;
+        margin: $margin-small*0.8;
+    }
+    @media screen and (max-width: $break-small) {
+        font-size: $fsmall*0.5;
+        margin: $margin-small*0.6;
+    }
 }
 .dmenu-big__h4{
     font-family: $secondary-font-dmenu;
     font-size: $fsmall;
     font-weight: $wregular;
     color: $color-dmenu-txt;
+    @media screen and (max-width: $break-large) {
+        font-size: $fsmall*0.9;
+    }
+    @media screen and (max-width: $break-medium) {
+        font-size: $fsmall*0.75;
+    }
+    @media screen and (max-width: $break-small) {
+        font-size: $fsmall*0.5;
+    }
 }
 .bmenu__h4{
     font-family: $secondary-font-bmenu;
     font-size: $fnormal;
     font-weight: $wregular;
     background-image: linear-gradient(to right, $color-bmenu-gdr-a, $color-bmenu-gdr-b, $color-bmenu-gdr-c);
+    background-clip: text;
+
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    @media screen and (max-width: $break-large) {
+        font-size: $fnormal*0.9;
+    }
+    @media screen and (max-width: $break-medium) {
+        font-size: $fnormal*0.75;
+    }
+    @media screen and (max-width: $break-small) {
+        font-size: $fnormal*0.5;
+    }
+
 }
 .bmenu__h3{
     font-family: $primary-font-bmenu;
@@ -223,14 +380,36 @@ h1{
     font-weight: $wsemi-bold;
     margin: $margin-small;
     color: $color-bmenu-gdr-a;
+    @media screen and (max-width: $break-large) {
+        font-size: $flarge*0.9;
+    }
+    @media screen and (max-width: $break-medium) {
+        font-size: $flarge*0.75;
+        margin: $margin-small*0.8;
+    }
+    @media screen and (max-width: $break-small) {
+        font-size: $flarge*0.5;
+        margin: $margin-small*0.6;
+    }
 }
 .cmenu__h4{
     font-family: $secondary-font-cmenu;
     font-size: $fmedium;
     font-weight: $wregular;
     background-image: linear-gradient(to right, $color-cmenu-gdr-a, $color-cmenu-gdr-b, $color-cmenu-gdr-c);
+    background-clip: text;
+
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    @media screen and (max-width: $break-large) {
+        font-size: $fmedium*0.9;
+    }
+    @media screen and (max-width: $break-medium) {
+        font-size: $fmedium*0.75;
+    }
+    @media screen and (max-width: $break-small) {
+        font-size: $flarge*0.5;
+    }
 }
 .cmenu__h3{
     font-family: $primary-font-cmenu;
@@ -239,6 +418,17 @@ h1{
     font-style: italic;
     margin: $margin-small;
     color: $color-cmenu-gdr-b;
+    @media screen and (max-width: $break-large) {
+        font-size: $fbig*0.9;
+    }
+    @media screen and (max-width: $break-medium) {
+        font-size: $fbig*0.75;
+        margin: $margin-small*0.8;
+    }
+    @media screen and (max-width: $break-small) {
+        font-size: $fbig*0.5;
+        margin: $margin-small*0.6;
+    }
 
 }
 .dmenu__h4{
@@ -246,9 +436,19 @@ h1{
     font-size: $fmedium;
     font-weight: $wsemi-bold;
     background-image: linear-gradient(to right, $color-dmenu-gdr-a, $color-dmenu-gdr-b);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-style: italic;
+    @media screen and (max-width: $break-large) {
+        font-size: $fmedium*0.9;
+    }
+    @media screen and (max-width: $break-medium) {
+        font-size: $fmedium*0.75;
+    }
+    @media screen and (max-width: $break-small) {
+        font-size: $fmedium*0.5;
+    }
 }
 .dmenu__h3{
     font-family: $primary-font-dmenu;
@@ -256,13 +456,42 @@ h1{
     font-weight: $wsemi-bold;
     margin: $margin-small;
     color: $color-dmenu-gdr-a;
+    @media screen and (max-width: $break-large) {
+        font-size: $fbig*0.9;
+    }
+    @media screen and (max-width: $break-medium) {
+        font-size: $fbig*0.75;
+        margin: $margin-small*0.8;
+    }
+    @media screen and (max-width: $break-small) {
+        font-size: $fbig*0.5;
+        margin: $margin-small*0.6;
+    }
 
 }
 .main__h3{
     font-family: $primary-font;
     font-size: $fmedium;
+    @media screen and (max-width: $break-large) {
+        font-size: $fmedium*0.9;
+    }
+    @media screen and (max-width: $break-medium) {
+        font-size: $fmedium*0.75;
+    }
+    @media screen and (max-width: $break-small) {
+        font-size: $fmedium*0.5;
+    }
 }
 .main__h4{
     font-family: $primary-font;
     font-size: $fnormal;
+    @media screen and (max-width: $break-large) {
+        font-size: $fnormal*0.9;
+    }
+    @media screen and (max-width: $break-medium) {
+        font-size: $fnormal*0.75;
+    }
+    @media screen and (max-width: $break-small) {
+        font-size: $flarge*0.5;
+    }
 }

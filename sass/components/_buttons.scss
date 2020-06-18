@@ -9,19 +9,58 @@
     background-color: $color-primary;
     color: $color-txt;
     width: $width-small;
+    @media screen and (max-width: $break-large) {
+        margin: $width-small*0.9;
+    }
+    @media screen and (max-width: $break-medium) {
+        margin: $width-small*0.75;
+    }
+    @media screen and (max-width: $break-small) {
+        margin: $width-small*0.5;
+    }
     
 }
 .btn-main__radius{
     border-radius: 10px;
     margin: 10px;
+    @media screen and (max-width: $break-large) {
+        border-radius: 9px;
+        margin: 9px;
+    }
+    @media screen and (max-width: $break-medium) {
+        border-radius: 7.5px;
+        margin: 7.5px;
+    }
+    @media screen and (max-width: $break-small) {
+        border-radius: 5px;
+        margin: 5px;
+    }
 }
 .btn__left{
     text-align: left;
     margin-left: 100px;
+    @media screen and (max-width: $break-large) {
+        margin-left: 90px;
+    }
+    @media screen and (max-width: $break-medium) {
+        margin-left: 75px;
+    }
+    @media screen and (max-width: $break-small) {
+        margin-left: 0px;
+    }
 }
 .btn__right{
     text-align: right;
     margin-right: 100px;
+    @media screen and (max-width: $break-large) {
+        margin-right: 90px;
+    }
+    @media screen and (max-width: $break-medium) {
+        margin-right: 75px;
+    }
+    @media screen and (max-width: $break-small) {
+        margin-right: 0px;
+    }
 }
 .wiggle :hover{ 
     animation: wiggle 500ms infinite;

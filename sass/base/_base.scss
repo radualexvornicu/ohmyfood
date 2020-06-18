@@ -11,12 +11,41 @@ main{
     flex-direction: column;
     align-items: center;
     justify-self: center;
-    margin-bottom: $margin-normal*4;
-    
+    margin-bottom: $margin-normal*3;
+    @media screen and (max-width: $break-large) {
+        margin-bottom: $margin-normal*2.5;
+    }
+    @media screen and (max-width: $break-medium) {
+        margin-bottom: $margin-normal*2;
+
+    }
+    @media screen and (max-width: $break-small) {
+        margin-bottom: $margin-normal*1.5;
+        flex-direction: row;
+    }
 }
 
 img{
     width: 30%;
+    margin: $margin-small;
+    @media all and (max-width: $break-large){
+        width: 25%;
+        height: 90%;
+        margin: $margin-small*0.9;
+
+      }
+      @media screen and (max-width: $break-medium) {
+        width: 20%;
+        height: 75%;
+        margin: $margin-small*0.75;
+
+    }
+    @media screen and (max-width: $break-medium) {
+        width: 20%;
+        height: 60%;
+        margin: $margin-small*0.5;
+
+    }
 }
 .menu-big{
     width: $width-large;
@@ -28,6 +57,19 @@ img{
     flex-grow: 1;
     text-align: center;
     padding: $margin-normal*3;
+    @media all and (max-width: $break-large){
+        width: $width-large*0.9;
+        padding: $margin-normal*2.5;
+      }
+      @media all and (max-width: $break-medium){
+        width: $width-large*0.75;
+        padding: $margin-normal*2;
+      }
+      @media all and (max-width: $break-small){
+        width: $width-large*0.5;
+        padding: $margin-normal*1.5;
+        flex-direction: row;
+      }
 }
 .menu-big__a{
     background-color: $color-amenu-back;
@@ -66,7 +108,17 @@ footer{
     align-items: center;
     justify-content: space-between;
     background-color: $color-primary;
-
+    @media screen and(max-width: $break-large){
+        height: 45px;
+    }
+    @media screen and(max-width: $break-medium){
+        height: 35px;
+    }
+    @media screen and(max-width: $break-small){
+        min-height: 20px;
+        height: max-content;
+        flex-direction: column;
+    }
 }
 .content-row{
     flex-direction: row;
@@ -81,7 +133,25 @@ footer{
     text-align: center;
     padding: $margin-small;
     border-radius: 20px;
+    margin-bottom: $margin-normal*4;
+    @media screen and(max-width:$break-large) {
+        width: $width-normal*0.9;
+        margin-bottom: $margin-normal*3.5;  
+    }
+    @media screen and(max-width:$break-medium) {
+        width: $width-normal*0.75;
+        margin-bottom: $margin-normal*2.5;  
+        padding: $margin-small*0.9;
+        border-radius: 15px;
+    }
+    @media screen and(max-width:$break-small) {
+        width: $width-normal*0.5;
+        margin-bottom: $margin-normal*1.5;  
+        padding: $margin-small*0.5;
+        border-radius: 10px;
+    }
 }
+
 .bot-content:after {
     color: $color-txt;
     font-size: $fbig;
@@ -89,6 +159,15 @@ footer{
     -webkit-animation: dotty steps(1, end) 2s infinite;
     animation: dotty steps(1, end) 2s infinite;
     content: '';
+    @media screen and(max-width:$break-large) {
+        font-size: $fbig*0.9;
+    }
+    @media screen and(max-width:$break-medium) {
+        font-size: $fbig*0.75;
+    }
+    @media screen and(max-width:$break-small) {
+        font-size: $fbig*0.5;
+    }
 }
 @-webkit-keyframes dotty {
     0% {
@@ -132,33 +211,90 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    @media screen and (max-width: $break-large) {
+    width: $width-normal*0.9;
+    height: $height-big*0.9;
+    }
+    @media screen and (max-width: $break-medium) {
+        width: $width-normal*0.75;
+        height: $height-big*0.75;
+        }
+        @media screen and (max-width: $break-small) {
+            width: $width-normal*0.5;
+            height: $height-big*0.5;
+            }
 }
+
 .menu-small__a{
     background-color: $color-amenu-back;
     box-shadow: 0 0 5px $color-amenu-gdr-a;
     margin: $margin-normal $margin-small $margin-small  $margin-normal;
+    @media screen and (max-width: $break-large) {
+        margin: $margin-normal*0.9 $margin-small*0.9 $margin-small*0.9  $margin-normal*0.9;
+    }
+    @media screen and (max-width: $break-medium) {
+        margin: $margin-normal*0.75 $margin-small*0.75 $margin-small*0.75  $margin-normal*0.75;
+    }
+    @media screen and (max-width: $break-small) {
+        margin: $margin-normal*0.5 $margin-small*0.5 $margin-small*0.5  $margin-normal*0.5;
+    }
 }
 .menu-small__b{
     background-color: $color-bmenu-back;
     margin: $margin-normal $margin-normal $margin-small $margin-small;
     box-shadow: 0 0 5px $color-bmenu-gdr-a;
-    
+    @media screen and (max-width: $break-large) {
+        margin: $margin-normal*0.9  $margin-normal*0.9 $margin-small*0.9 $margin-small*0.9 ;
+    }
+    @media screen and (max-width: $break-medium) {
+        margin: $margin-normal*0.75 $margin-normal*0.75 $margin-small*0.75 $margin-small*0.75 ;
+    }
+    @media screen and (max-width: $break-small) {
+        margin: $margin-normal*0.5 $margin-normal*0.5 $margin-small*0.5 $margin-small*0.5  ;
+    }
 }
 .menu-small__c{
     background-color: $color-cmenu-back-a;
     margin:  $margin-small $margin-small $margin-small $margin-normal;
     box-shadow: 0 0 5px $color-cmenu-gdr-a;
+    @media screen and (max-width: $break-large) {
+        margin: $margin-small*0.9  $margin-small*0.9 $margin-small*0.9 $margin-normal*0.9 ;
+    }
+    @media screen and (max-width: $break-medium) {
+        margin: $margin-small*0.75 $margin-small*0.75 $margin-small*0.75 $margin-normal*0.75 ;
+    }
+    @media screen and (max-width: $break-small) {
+        margin: $margin-small*0.5 $margin-small*0.5 $margin-small*0.5 $margin-normal*0.5  ;
+    }
+    
 }
 .menu-small__d{
     background-color: $color-dmenu-back;
     margin: $margin-small $margin-normal $margin-normal  $margin-small;
     box-shadow: 0 0 5px $color-dmenu-gdr-a;
+    @media screen and (max-width: $break-large) {
+        margin: $margin-small*0.9  $margin-normal*0.9 $margin-normal*0.9 $margin-small*0.9 ;
     }
+    @media screen and (max-width: $break-medium) {
+        margin: $margin-small*0.75 $margin-normal*0.75 $margin-normal*0.75 $margin-small*0.75 ;
+    }
+    @media screen and (max-width: $break-small) {
+        margin: $margin-small*0.5 $margin-normal*0.5 $margin-normal*0.5 $margin-small*0.5  ;
+    }
+}
 
 .menu-txt{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: $margin-small;
+    @media screen and (max-width: $break-large) {
+        margin: $margin-small*0.9;
+    }
+    @media screen and (max-width: $break-medium) {
+        margin: $margin-small*0.75;
+    }
+    @media screen and (max-width: $break-small) {
+        margin: $margin-small*0.5;
+    }
 }
