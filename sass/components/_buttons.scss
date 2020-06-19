@@ -10,13 +10,13 @@
     color: $color-txt;
     width: $width-small;
     @media screen and (max-width: $break-large) {
-        margin: $width-small*0.9;
+        width: $width-small*$sclarge;
     }
     @media screen and (max-width: $break-medium) {
-        margin: $width-small*0.75;
+        width: $width-small*$scmedium;
     }
     @media screen and (max-width: $break-small) {
-        margin: $width-small*0.5;
+        width: $width-small*$scsmall;
     }
     
 }
@@ -43,7 +43,7 @@
         margin-left: 90px;
     }
     @media screen and (max-width: $break-medium) {
-        margin-left: 75px;
+        margin-left: 50px;
     }
     @media screen and (max-width: $break-small) {
         margin-left: 0px;
@@ -56,7 +56,7 @@
         margin-right: 90px;
     }
     @media screen and (max-width: $break-medium) {
-        margin-right: 75px;
+        margin-right: 50px;
     }
     @media screen and (max-width: $break-small) {
         margin-right: 0px;
