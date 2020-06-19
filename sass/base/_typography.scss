@@ -214,13 +214,13 @@ h1{
     color: $color-bmenu-gdr-b;
     margin: $margin-small;
     @media screen and (max-width: $break-large) {
-        font-size: $f*$sclarge;
+        font-size: $fnormal*0.74*$sclarge;
     }
     @media screen and (max-width: $break-medium) {
-        font-size: $fbig*$scmedium;
+        font-size: $fnormal*0.74*$scmedium;
     }
     @media screen and (max-width: $break-small) {
-        font-size: $fbig*$scsmall;
+        font-size: $fnormal*0.74*$scsmall;
     }
 }
 .bmenu-big__h3__c{
