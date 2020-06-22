@@ -6,12 +6,16 @@ header{
     top: 0px
 }
 main{
-    width: 80%;
+    width: 75%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-self: center;
+    margin: auto;
     margin-bottom: $margin-normal*3;
+    @media screen and (min-width: 1300px){
+        width: 65%;
+    }
     @media screen and (max-width: $break-large) {
         margin-bottom: $margin-normal*2.5;
     }
@@ -123,10 +127,8 @@ footer{
         height: 25px;
     }
     @media screen and(max-width: $break-small){
-        min-height: 20px;
-        height: max-content;
-        flex-direction: column;
-        justify-content: center;
+        height: max-content;        
+
     }
 }
 .content-row{
@@ -226,100 +228,61 @@ footer{
     }
 }
 .menu-small{    
-    width: $width-normal;
+    width: 40%;
+    min-width: $width-normal;
     height: $height-big;
+    margin: auto;
+    margin-top: $margin-normal*2;
+    margin-bottom: $margin-normal*2;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     @media screen and (max-width: $break-large) {
-    width: $width-normal*$sclarge;
+    min-width: $width-small*$sclarge;
     height: $height-big*$sclarge;
+    margin-top: $margin-normal*2*$sclarge;
+    margin-bottom: $margin-normal*2*$sclarge;
     }
     @media screen and (max-width: $break-medium) {
-        width: $width-normal*$scmedium;
+        min-width: $width-small*$sclarge;
         height: $height-big*$scmedium;
-    }
+        margin-top: $margin-normal*2*$scmedium;
+        margin-bottom: $margin-normal*2*$scmedium;
+        }
     @media screen and (max-width: $break-semi) {
-        width: $width-normal*$scsemi;
+       width: 60%;
         height: $height-big*$scsemi;
-    }
+        margin-top: $margin-normal*2*$scsemi;
+        margin-bottom: $margin-normal*2*$scsemi;
+        }
     @media screen and (max-width: $break-small) {
-        width: $width-normal*$scsmall;
-        height: $height-big*$scsmall;
+        width: 100%;
+        height: $height-big*$scsemi;
+        margin-top: $margin-normal*2*$scsmall;
+        margin-bottom: $margin-normal*2*$scsmall;
     }
 }
 
 .menu-small__a{
     background-color: $color-amenu-back;
     box-shadow: 0 0 5px $color-amenu-gdr-a;
-    margin: $margin-normal $margin-small $margin-small  $margin-normal;
-    @media screen and (max-width: $break-large) {
-        margin: $margin-normal*$sclarge $margin-small*$sclarge $margin-small*$sclarge  $margin-normal*$sclarge;
-    }
-    @media screen and (max-width: $break-medium) {
-        margin: $margin-normal*$scmedium $margin-small*$scmedium $margin-small*$scmedium  $margin-normal*$scmedium;
-    }
-    @media screen and (max-width: $break-semi) {
-        margin: $margin-normal*$scsemi $margin-small*$scsemi $margin-small*$scsemi  $margin-normal*$scsemi;
-    }
-    @media screen and (max-width: $break-small) {
-        margin: 0px;
-    }
 }
 .menu-small__b{
     background-color: $color-bmenu-back;
-    margin: $margin-normal $margin-normal $margin-small $margin-small;
     box-shadow: 0 0 5px $color-bmenu-gdr-a;
-    @media screen and (max-width: $break-large) {
-        margin: $margin-normal*$sclarge  $margin-normal*$sclarge $margin-small*$sclarge $margin-small*$sclarge;
-    }
-    @media screen and (max-width: $break-medium) {
-        margin: $margin-normal*$scmedium $margin-normal*$scmedium $margin-small*$scmedium $margin-small*$scmedium;
-    }
-    @media screen and (max-width: $break-semi) {
-        margin: $margin-normal*$scsemi $margin-normal*$scsemi $margin-small*$scsemi $margin-small*$scsemi;
-    }
-    @media screen and (max-width: $break-semi) {
-        margin: 0px;
-    }
+   
 }
 .menu-small__c{
     background-color: $color-cmenu-back-a;
-    margin:  $margin-small $margin-small $margin-small $margin-normal;
     box-shadow: 0 0 5px $color-cmenu-gdr-a;
-    @media screen and (max-width: $break-large) {
-        margin: $margin-small*$sclarge  $margin-small*$sclarge $margin-small*$sclarge $margin-normal*$sclarge;
-    }
-    @media screen and (max-width: $break-medium) {
-        margin: $margin-small*$scmedium $margin-small*$scmedium $margin-small*$scmedium $margin-normal*$scmedium;
-    }
-    @media screen and (max-width: $break-semi) {
-        margin: $margin-small*$scsemi $margin-small*$scsemi $margin-small*$scsemi $margin-normal*$scsemi;
-    }
-    @media screen and (max-width: $break-small){
-        margin: 0px;
-    }
     
 }
 
 .menu-small__d{
     background-color: $color-dmenu-back;
-    margin: $margin-small $margin-normal $margin-normal  $margin-small;
     box-shadow: 0 0 5px $color-dmenu-gdr-a;
-    @media screen and (max-width: $break-large) {
-        margin: $margin-small*$sclarge  $margin-normal*$sclarge $margin-normal*$sclarge $margin-small*$sclarge;
-    }
-    @media screen and (max-width: $break-medium) {
-        margin: $margin-small*$scmedium $margin-normal*$scmedium $margin-normal*$scmedium $margin-small*$scmedium;
-    }
-    @media screen and (max-width: $break-semi) {
-        margin: $margin-small*$scsemi $margin-normal*$scsemi $margin-normal*$scsemi $margin-small*$scsemi;
-    }
-    @media screen and (max-width:$break-small){
-        margin: 0px;
-    }
-}
+  }
 
 .menu-txt{
     display: flex;
