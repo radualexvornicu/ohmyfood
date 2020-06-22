@@ -241,7 +241,7 @@ footer{
         height: $height-big*$scmedium;
     }
     @media screen and (max-width: $break-semi) {
-        width: $width-normal*$ssemi;
+        width: $width-normal*$scsemi;
         height: $height-big*$scsemi;
     }
     @media screen and (max-width: $break-small) {
@@ -297,7 +297,7 @@ footer{
     @media screen and (max-width: $break-semi) {
         margin: $margin-small*$scsemi $margin-small*$scsemi $margin-small*$scsemi $margin-normal*$scsemi;
     }
-    @media screen and (max-width: $break-small{
+    @media screen and (max-width: $break-small){
         margin: 0px;
     }
     
