@@ -7,19 +7,23 @@
 .underline-amenu a:hover{
     color: $color-amenu-txt;
 }
+.underline {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  transform-origin: 0 50%;
+  transform: scaleX(0);
+  transition: all 0.2s ease-in-out 0.15s;
+}
+
 .underline-amenu a::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
+    @extend .underline;
     background-color: $color-amenu-txt;
-    visibility: hidden;
-    transform-origin: 0 50%;
-    transform: scaleX(0);
-    transition: all 0.2s ease-in-out 0.15s;
-  }
+    }
   .underline-amenu a:hover::before {
     visibility: visible;
     transform: scaleX(1);
@@ -35,18 +39,9 @@
     color: $color-bmenu-gdr-a;
 }
 .underline-bmenu__a a::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
+    @extend .underline;
     background-color: $color-bmenu-gdr-a;
-    visibility: hidden;
-    transform-origin: 0 50%;
-    transform: scaleX(0);
-    transition: all 0.2s ease-in-out 0.15s;
-  }
+    }
   .underline-bmenu__a a:hover::before {
     visibility: visible;
     transform: scaleX(1);
@@ -61,18 +56,9 @@
     color: $color-bmenu-gdr-b;
 }
 .underline-bmenu__b a::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
+    @extend .underline;
     background-color: $color-bmenu-gdr-b;
-    visibility: hidden;
-    transform-origin: 0 50%;
-    transform: scaleX(0);
-    transition: all 0.2s ease-in-out 0.15s;
-  }
+    }
   .underline-bmenu__b a:hover::before {
     visibility: visible;
     transform: scaleX(1);
@@ -87,17 +73,9 @@
     color: $color-bmenu-gdr-c;
 }
 .underline-bmenu__c a::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
+    
     background-color: $color-bmenu-gdr-c;
-    visibility: hidden;
-    transform-origin: 0 50%;
-    transform: scaleX(0);
-    transition: all 0.2s ease-in-out 0.15s;
+    @extend .underline;  
   }
   .underline-bmenu__c a:hover::before {
     visibility: visible;
@@ -113,18 +91,9 @@
     color: $color-cmenu-txt;
 }
 .underline-cmenu a::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
+    @extend .underline;
     background-color: $color-cmenu-txt;
-    visibility: hidden;
-    transform-origin: 0 50%;
-    transform: scaleX(0);
-    transition: all 0.2s ease-in-out 0.15s;
-  }
+    }
   .underline-cmenu a:hover::before {
     visibility: visible;
     transform: scaleX(1);
@@ -140,18 +109,9 @@
     color: $color-dmenu-txt;
 }
 .underline-dmenu a::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
+    @extend .underline;
     background-color: $color-dmenu-txt;
-    visibility: hidden;
-    transform-origin: 0 50%;
-    transform: scaleX(0);
-    transition: all 0.2s ease-in-out 0.15s;
-  }
+    }
   .underline-dmenu a:hover::before {
     visibility: visible;
     transform: scaleX(1);

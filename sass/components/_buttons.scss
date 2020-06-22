@@ -15,6 +15,9 @@
     @media screen and (max-width: $break-medium) {
         width: $width-small*$scmedium;
     }
+    @media screen and (max-width: $break-semi) {
+        width: $width-small*$scsemi;
+    }
     @media screen and (max-width: $break-small) {
         width: $width-small*$scsmall;
     }
@@ -31,11 +34,16 @@
         border-radius: 7.5px;
         margin: 7.5px;
     }
+    @media screen and (max-width: $break-semi) {
+        border-radius: 6px;
+        margin: 6px;
+    }
     @media screen and (max-width: $break-small) {
         border-radius: 5px;
         margin: 5px;
     }
 }
+
 .btn__left{
     text-align: left;
     margin-left: 100px;
@@ -45,10 +53,15 @@
     @media screen and (max-width: $break-medium) {
         margin-left: 50px;
     }
+    @media screen and (max-width: $break-semi) {
+        margin-left: 25px;
+    }
     @media screen and (max-width: $break-small) {
         margin-left: 0px;
+        text-align: center;
     }
 }
+
 .btn__right{
     text-align: right;
     margin-right: 100px;
@@ -58,10 +71,15 @@
     @media screen and (max-width: $break-medium) {
         margin-right: 50px;
     }
+    @media screen and (max-width: $break-semi) {
+        margin-right: 25px;
+    }
     @media screen and (max-width: $break-small) {
         margin-right: 0px;
+        text-align: center;
     }
 }
+
 .wiggle :hover{ 
     animation: wiggle 500ms infinite;
     animation-timing-function: linear;   
