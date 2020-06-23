@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./css/style.css --style compressed",
-    "prefix": "postcss --use autoprefixer -d./css/prefixed/"
+    "prefix": "postcss ./css/style.csss --use autoprefixer -d build/"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,11 @@
     "url": "https://github.com/radualexvornicu/ohmyfood.git/issues"
   },
   "homepage": "https://github.com/radualexvornicu/",
-  "browserslist": "last 4 versions"
+  "browserslist": "last 4 versions",
+  "dependencies": {
+    "postcss-cli": "^7.1.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.2"
+  }
 }
