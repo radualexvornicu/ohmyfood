@@ -52,7 +52,7 @@ img{
     }
 }
 .menu-big{
-    width: $width-large;
+    width: 75%;
     height: min-content;
     display: flex;
     flex-wrap: wrap;
@@ -60,21 +60,21 @@ img{
     flex-direction: column;
     flex-grow: 1;
     text-align: center;
-    padding: $margin-normal*3;
+    padding: $margin-normal*2;
     @media all and (max-width: $break-large){
-        width: $width-large*$sclarge;
-        padding: $margin-normal*2.5;
+        width: 80%;
+        padding: $margin-normal*1.8;
       }
       @media all and (max-width: $break-medium){
-        width: $width-large*$scmedium;
-        padding: $margin-normal*2;
-      }
-      @media all and (max-width: $break-semi){
-        width: $width-large*$scsemi;
+        width: 80%;
         padding: $margin-normal*1.5;
       }
+      @media all and (max-width: $break-semi){
+        width: 80%;
+        padding: $margin-normal*0.8;
+      }
       @media all and (max-width: $break-small){
-        width: $width-large*$scsmall;
+        width: 70%;
         padding: $margin-normal*1.5;
       }
 }
