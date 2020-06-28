@@ -102,8 +102,33 @@
     transform-origin: 50% 50%;
     transition: transform $animate-zoom;
     overflow: hidden;
+    -webkit-transition: transform $animate-zoom;
+    -moz-transition: transform $animate-zoom;
+    -ms-transition: transform $animate-zoom;
+    -o-transition: transform $animate-zoom;
 }
 .btn-zoom:hover a{
-    transform: scale(1.25);
+    transform: scale(1.4);
     opacity: 0.8;
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4);
+}
+.btn-zoom__b a{
+    transform-origin: 50% 50%;
+    transition: transform $animate-zoom;
+    overflow: hidden;
+    -webkit-transition: transform $animate-zoom;
+    -moz-transition: transform $animate-zoom;
+    -ms-transition: transform $animate-zoom;
+    -o-transition: transform $animate-zoom;
+}
+.btn-zoom__b:hover a{
+    transform: scale(1.2);
+    opacity: 0.8;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
 }

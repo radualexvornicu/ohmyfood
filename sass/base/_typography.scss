@@ -13,7 +13,7 @@ p{
 }
 h1{
     font-family: $primary-font;
-    font-style: bold;
+    font-weight: bold;
 }
 .note{
     text-decoration: none;
@@ -23,7 +23,6 @@ h1{
     width: $flarge+1;
     margin: auto;
     background-image: linear-gradient(to right, $color-amenu-gdr-a, $color-amenu-gdr-b);
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     @media screen and (max-width: $break-large) {
@@ -217,7 +216,6 @@ h1{
     font-size: $fbig;
     font-weight: $wregular;
     background-image: linear-gradient(to right, $color-bmenu-gdr-a, $color-bmenu-gdr-b, $color-bmenu-gdr-c);
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     @media screen and (max-width: $break-large) {
@@ -307,7 +305,6 @@ h1{
     font-size: $fbig;
     font-weight: $wregular;
     background-image: linear-gradient(to right, $color-cmenu-gdr-a, $color-cmenu-gdr-b, $color-cmenu-gdr-c);
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     @media screen and (max-width: $break-large) {
@@ -406,7 +403,6 @@ h1{
     font-size: $fbig;
     font-weight: $wregular;
     background-image: linear-gradient(to right, $color-dmenu-gdr-a, $color-dmenu-gdr-b);
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     @media screen and (max-width: $break-large) {
@@ -481,7 +477,7 @@ h1{
     
     }
     @media screen and (max-width: $break-medium) {
-        font-size: $fnormal$scmedium;
+        font-size: $fnormal*$scmedium;
         margin-top: $margin-normal*1.5*$scmedium;
     margin-bottom: $margin-normal*3*$scmedium;
     
@@ -504,8 +500,6 @@ h1{
     font-size: $fnormal;
     font-weight: $wregular;
     background-image: linear-gradient(to right, $color-bmenu-gdr-a, $color-bmenu-gdr-b, $color-bmenu-gdr-c);
-    background-clip: text;
-
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     @media screen and (max-width: $break-large) {
@@ -551,7 +545,6 @@ h1{
     font-size: $fmedium;
     font-weight: $wregular;
     background-image: linear-gradient(to right, $color-cmenu-gdr-a, $color-cmenu-gdr-b, $color-cmenu-gdr-c);
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     @media screen and (max-width: $break-large) {
@@ -596,7 +589,6 @@ h1{
     font-size: $fmedium;
     font-weight: $wsemi-bold;
     background-image: linear-gradient(to right, $color-dmenu-gdr-a, $color-dmenu-gdr-b);
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-style: italic;
@@ -668,6 +660,6 @@ h1{
         font-size: $fnormal*$scsemi;
     }
     @media screen and (max-width: $break-small) {
-        font-size: $fnormal$scsmall;
+        font-size: $fnormal*$scsmall;
     }
 }
